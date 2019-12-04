@@ -1,10 +1,7 @@
-<?php
-?>
-<?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die();
-?>
-<?use Bitrix\Main\Localization\Loc;
-use Bitrix\Main\Page\Asset;
-Loc::loadMessages(__FILE__);?>
+<?php?>
+
+<?if(!defined("B_PROLOG_INCLUDED")||B_PROLOG_INCLUDED!==true)die(); ?>
+<?use Bitrix\Main\Localization\Loc;use Bitrix\Main\Page\Asset;Loc::loadMessages(__FILE__);?>
 
 <!DOCTYPE html>
 <html lang="<?=LANGUAGE_ID?>">
@@ -22,7 +19,8 @@ Loc::loadMessages(__FILE__);?>
                 <a href="index.html"><?$APPLICATION->IncludeComponent(
                         "bitrix:main.include",
                         "",
-                        Array(
+                        Array
+                        (
                             "COMPONENT_TEMPLATE" => ".default",
                             "AREA_FILE_SHOW" => "file",
                             "AREA_FILE_SUFFIX" => "inc",
